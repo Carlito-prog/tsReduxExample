@@ -1,8 +1,8 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .logo {
@@ -54,4 +54,22 @@
 
 .read-the-docs {
   color: #888;
+}
+.bagBodyCont{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.bagBodytextwrp{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  /* repositioning of a div */ 
+  /* translate: 50%, 50% ; */
+  /* transform - rotate /scale /move /skew */ 
+  transform: translate(-50%, -50%);
+}
+.bagBodytextwrp h1{
+  text-wrap: wrap;
 }

@@ -3,6 +3,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import BigHeader from "./bigHeader";
 import { counterSlice } from "./counterSlice";
 import { Provider } from "react-redux";
+import BagBody from "./bagBody";
 
 export const store = configureStore({
   reducer: counterSlice.reducer,
@@ -15,6 +16,7 @@ function App() {
   return (
     <Provider store={store}>
       <BigHeader />
+      <BagBody/>
     </Provider>
   );
 }
